@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather Forecast in Your City</title>
+                
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!--CSS-->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        
+        <script
+			src="https://code.jquery.com/jquery-3.4.1.js"
+			integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"
+            >
+        </script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="row">
+                <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+                    <div class="card card-signin my-5">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Current Weather</h5>
+                            <form class="form-signin">
+                                <div class="form-label-group" id="search-box">
+                                    <input type="text" id="city" class="form-control" placeholder="Enter your city" value="" required autofocus>
+                                    <label for="city">Enter your city</label>
+                                    <button type="button" class="btn btn-lg btn-primary btn-block text-uppercase" id="search-button" onclick="getCity()">Search</button>
+                                </div>
+                                
+                                <div id="weather-container">
+                                    <img id="icon">     
+                                    <p id="weather"></p>    
+                                    <p id="temp"></p>   
+                                    <button type="button" class="btn btn-lg btn-primary btn-block text-uppercase" onclick="goBack()">&lt;&lt; Back to Search</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+    </body>
+</html>
