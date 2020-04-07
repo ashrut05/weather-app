@@ -20,19 +20,19 @@
         <script src="script.js"></script>
     </head>
     <body>
-        <div class="row">
+        <div class="row" id="main-body">
                 <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
                     <div class="card card-signin my-5">
                         <div class="card-body">
                             <h5 class="card-title text-center">Current Weather</h5>
                             <form class="form-signin">
                                 <div class="form-label-group" id="search-box">
-                                    <input type="text" id="city" class="form-control" placeholder="Enter your city" value="" required autofocus>
+                                    <input type="text" id="city" name="city" class="form-control" placeholder="Enter your city" value="" required autofocus>
                                     <label for="city">Enter your city</label>
                                     <button type="button" class="btn btn-lg btn-primary btn-block text-uppercase" id="search-button" onclick="getCity()">Search</button>
                                 </div>
                                 
-                                <div id="weather-container">
+                                <div id="weather-container" class="card-title text-center">
                                     <img id="icon">     
                                     <p id="weather"></p>    
                                     <p id="temp"></p>   
